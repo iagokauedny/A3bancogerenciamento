@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="inicio.html">Início</a></li>
+            <li><a href="index.html">Cadastrar Veículos</a></li>
+            <li><a href="clientes.html">Cadastrar Clientes</a></li>
+            <li><a href="consulta.html">Consultar Veículos</a></li>
+            <li id="logoff-btn"><a href="login.html">Logoff</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Loja de Carros</h1>
+        <div class="content">
+            <h2>Cadastrar Veículo</h2>
+            <input type="text" id="marca" placeholder="Marca">
+            <input type="text" id="modelo" placeholder="Modelo">
+            <input type="text" id="ano" placeholder="Ano">
+            <input type="text" id="cor" placeholder="Cor">
+            <input type="text" id="preco" placeholder="Preço">
+            <button onclick="cadastrarVeiculo()">Cadastrar</button>
+        </div>
+        <div class="content">
+            <h2>Veículos Disponíveis</h2>
+            <ul id="veiculos-lista"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
